@@ -32,9 +32,6 @@ for kernel_version  in %{?kernel_versions} ; do
 done
 
 %build
-mkdir /tmp/bin
-export PATH=$PATH:/tmp/bin
-ln -s /usr/bin/ld.bfd /tmp/bin/ld
 for kernel_version  in %{?kernel_versions} ; do
   make V=1 %{?_smp_mflags} -C ${kernel_version##*___} M=${PWD}/_kmod_build_${kernel_version%%___*} VERSION=v%{version} modules
 done
