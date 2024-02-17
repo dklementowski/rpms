@@ -1,5 +1,9 @@
+%if 0%{?fedora}
+%global debug_package %{nil}
+%endif
+
 Name:     it87
-Version:  154
+Version:  155
 Release:  2%{?dist}
 Summary:  Linux Driver for ITE LPC chips
 License:  none
