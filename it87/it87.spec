@@ -20,9 +20,13 @@ Linux Driver for ITE LPC chips
 %build
 
 %install
+%if %{defined _modulesloaddir}
 install -p -D -m 0644 %{SOURCE1} %{buildroot}%{_modulesloaddir}/%{name}.conf
+%endif
 
 %files
+%if %{defined _modulesloaddir}
 %{_modulesloaddir}/%{name}.conf
+%endif
 
 %changelog
