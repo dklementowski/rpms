@@ -4,7 +4,7 @@
 
 Name:     it87
 Version:  156
-Release:  1%{?dist}
+Release:  2%{?dist}
 Summary:  Linux Driver for ITE LPC chips
 License:  none
 URL:      https://github.com/frankcrawford/it87
@@ -15,6 +15,7 @@ Provides:       %{name}-kmod-common = %{version}-%{release}
 Requires:       %{name}-kmod >= %{version}
 
 BuildArch:      noarch
+BuildRequires:  systemd-rpm-macros
 
 %description
 Linux Driver for ITE LPC chips
@@ -34,3 +35,4 @@ install -p -D -m 0644 %{SOURCE1} %{buildroot}%{_modulesloaddir}/%{name}.conf
 %endif
 
 %changelog
+{{{ git_dir_changelog }}}

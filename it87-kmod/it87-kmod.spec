@@ -5,7 +5,7 @@
 
 Name:     it87-kmod
 Version:  156
-Release:  1%{?dist}
+Release:  2%{?dist}
 Summary:  Linux Driver for ITE LPC chips
 License:  none
 URL:      https://github.com/frankcrawford/it87
