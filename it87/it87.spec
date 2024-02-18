@@ -2,9 +2,9 @@
 %global debug_package %{nil}
 %endif
 
-Name:     it87
-Version:  156
-Release:  2%{?dist}
+Name:     it87-frankcrawford
+Version:  1
+Release:  1%{?dist}
 Summary:  Linux Driver for ITE LPC chips
 License:  none
 URL:      https://github.com/frankcrawford/it87
