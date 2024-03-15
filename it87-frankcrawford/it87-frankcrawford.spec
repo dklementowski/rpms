@@ -4,7 +4,7 @@
 
 Name:     it87-frankcrawford
 Version:  1
-Release:  3%{?dist}
+Release:  4%{?dist}
 Summary:  Linux Driver for ITE LPC chips
 License:  none
 URL:      https://github.com/frankcrawford/it87
